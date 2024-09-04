@@ -43,13 +43,7 @@ Sofern durch einzelne von uns implementierte Cookies auch personenbezogene Daten
 
 Wir arbeiten unter Umständen mit Werbepartnern zusammen, die uns helfen, unser Internetangebot für Sie interessanter zu gestalten. Zu diesem Zweck werden für diesen Fall bei Ihrem Besuch unserer Website auch Cookies von Partnerunternehmen auf Ihrer Festplatte gespeichert (Cookies von Drittanbietern). Wenn wir mit vorbenannten Werbepartnern zusammenarbeiten, werden Sie über den Einsatz derartiger Cookies und den Umfang der jeweils erhobenen Informationen innerhalb der nachstehenden Absätze individuell und gesondert informiert.
 
-Bitte beachten Sie, dass Sie Ihren Browser so einstellen können, dass Sie über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von Cookies für bestimmte Fälle oder generell ausschließen können. Jeder Browser unterscheidet sich in der Art, wie er die Cookie-Einstellungen verwaltet. Diese ist in dem Hilfemenü jedes Browsers beschrieben, welches Ihnen erläutert, wie Sie Ihre Cookie-Einstellungen ändern können. Diese finden Sie für die jeweiligen Browser unter den folgenden Links:
-
-- **Internet Explorer:** [http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies](http://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies)
-- **Firefox:** [https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen](https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen)
-- **Chrome:** [http://support.google.com/chrome/bin/answer.py?hl=de&hlrm=en&answer=95647](http://support.google.com/chrome/bin/answer.py?hl=de&hlrm=en&answer=95647)
-- **Safari:** [https://support.apple.com/kb/ph21411?locale=de_DE](https://support.apple.com/kb/ph21411?locale=de_DE)
-- **Opera:** [http://help.opera.com/Windows/10.20/de/cookies.html](http://help.opera.com/Windows/10.20/de/cookies.html)
+Bitte beachten Sie, dass Sie Ihren Browser so einstellen können, dass Sie über das Setzen von Cookies informiert werden und einzeln über deren Annahme entscheiden oder die Annahme von Cookies für bestimmte Fälle oder generell ausschließen können. Jeder Browser unterscheidet sich in der Art, wie er die Cookie-Einstellungen verwaltet. Diese ist in dem Hilfemenü jedes Browsers beschrieben, welches Ihnen erläutert, wie Sie Ihre Cookie-Einstellungen ändern können.
 
 Bitte beachten Sie, dass bei Nichtannahme von Cookies die Funktionalität unserer Website eingeschränkt sein kann.
 
@@ -68,16 +62,6 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten z
 ---
 
 ## 6) Tools und Sonstiges
-
-**Google Web Fonts**
-
-Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts die von der Google LLC., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA („Google“) bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browser-Cache, um Texte und Schriftarten korrekt anzuzeigen.
-
-Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde. Die Nutzung von Google Web Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.
-
-Google LLC mit Sitz in den USA ist für das us-europäische Datenschutzübereinkommen „Privacy Shield“ zertifiziert, welches die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleistet.
-
-Weitere Informationen zu Google Web Fonts finden Sie unter [https://developers.google.com/fonts/faq](https://developers.google.com/fonts/faq) und in der Datenschutzerklärung von Google: [https://www.google.com/policies/privacy/](https://www.google.com/policies/privacy/)
 
 ---
 
