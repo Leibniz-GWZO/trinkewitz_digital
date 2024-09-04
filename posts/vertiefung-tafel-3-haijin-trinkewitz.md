@@ -474,7 +474,7 @@ permalink: /vertiefung-tafel-3-haijin-trinkewitz/
                 </div>
               </section>
               <div class="buttons" style="margin: 20px 0;">>
-                <a href="{{ '/trinkewitz/tafel3/' | relative_url }}" class="neutral">zu Tafel 3</a>
+                <a href="{{ '/tafelinhalt3/' | relative_url }}" class="neutral">zu Tafel 3</a>
                 <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
               </div>
               <div class="avia_textblock" itemprop="text">

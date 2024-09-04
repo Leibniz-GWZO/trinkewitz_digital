@@ -100,7 +100,7 @@ permalink: /vertiefung-tafel-3-die-unertraegliche-leichtigkeit-des-haiku/
     <p>Original in: Karel Trinkewitz: Prag in siebzehn Silben/Praha v sedmnácti slabikách. Baden-Baden 1994, Nachwort.</p>
     <hr style="border-top: 2px solid #000; margin-top: 40px; margin-bottom: 10px;">
     <div class="buttons" style="margin: 20px 0;">
-      <a href="{{ '/trinkewitz/tafel3/' | relative_url }}" class="neutral">zu Tafel 3</a> <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
+      <a href="{{ '/tafelinhalt3/' | relative_url }}" class="neutral">zu Tafel 3</a> <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
     </div>
     <hr style="border-top: 2px solid #000; margin-top: 10px; margin-bottom: 80px;">
     <p><a href="#_ftnref1" name="_ftn1" id="_ftn1">[1]</a> Barthes, Roland: Das Reich der Zeichen. Frankfurt am Main 1981, S. 94.</p>

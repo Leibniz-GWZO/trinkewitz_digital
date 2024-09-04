@@ -63,7 +63,7 @@ permalink: /vertiefung-tafel-2-tabellarischer-lebenslauf/
               </div>
               <hr style="border-top: 2px solid #000; margin-top: 40px; margin-bottom: 10px;">
               <div class="buttons" style="margin: 20px 0;">
-                <a href="{{ '/trinkewitz/tafel2/' | relative_url }}" class="neutral">zu Tafel 2</a> <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
+                <a href="{{ '/tafelinhalt2/' | relative_url }}" class="neutral">zu Tafel 2</a> <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
               </div>
               <hr style="border-top: 2px solid #000; margin-top: 10px; margin-bottom: 80px;">
             </div>

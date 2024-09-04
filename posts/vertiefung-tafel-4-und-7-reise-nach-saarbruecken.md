@@ -145,8 +145,8 @@ permalink: /vertiefung-tafel-4-und-7-reise-nach-saarbruecken/
                 </span>
               </div>
               <div class="buttons" style="margin: 20px 0;">>
-                <a href="{{ '/trinkewitz/tafel4/' | relative_url }}" class="neutral">zu Tafel 4</a>
-                <a href="{{ '/trinkewitz/tafel7/' | relative_url }}" class="neutral">zu Tafel 7</a>
+                <a href="{{ '/tafelinhalt4/' | relative_url }}" class="neutral">zu Tafel 4</a>
+                <a href="{{ '/tafelinhalt7/' | relative_url }}" class="neutral">zu Tafel 7</a>
                 <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
             </div>
             </div>

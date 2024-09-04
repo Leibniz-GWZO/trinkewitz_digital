@@ -65,7 +65,7 @@ permalink: /vertiefung-tafel-3-poesie-des-augenblicks-und-der-ewigkeit/
                 </span>
               </div>
               <div class="buttons" style="margin: 20px 0;">>
-                <a href="{{ '/trinkewitz/tafel3/' | relative_url }}" class="neutral">zu Tafel 3</a>
+                <a href="{{ '/tafelinhalt3/' | relative_url }}" class="neutral">zu Tafel 3</a>
                 <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
             </div>
             </div>
@@ -75,37 +75,3 @@ permalink: /vertiefung-tafel-3-poesie-des-augenblicks-und-der-ewigkeit/
     </div>
   </div>
 </div>
-
-<footer class="container_wrap socket_color" id="socket" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
-  <div class="container">
-    <span class="copyright">© Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO). [Online-Ausstellung Trinkewitz, Januar 2017] </span>
-    <nav class="sub_menu_socket" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
-      <div class="avia3-menu">
-        <ul id="avia3-menu" class="menu">
-          <li id="menu-item-3366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-1">
-            <a href="{{ '/impressum/' | absolute_url }}" itemprop="url">
-              <span class="avia-bullet"></span>
-              <span class="avia-menu-text">Impressum</span>
-              <span class="avia-menu-fx">
-                <span class="avia-arrow-wrap">
-                  <span class="avia-arrow"></span>
-                </span>
-              </span>
-            </a>
-          </li>
-          <li id="menu-item-4112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-2">
-            <a href="{{ '/datenschutz/' | absolute_url }}" itemprop="url">
-              <span class="avia-bullet"></span>
-              <span class="avia-menu-text">Datenschutz</span>
-              <span class="avia-menu-fx">
-                <span class="avia-arrow-wrap">
-                  <span class="avia-arrow"></span>
-                </span>
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</footer>

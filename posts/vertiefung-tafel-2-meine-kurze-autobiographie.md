@@ -74,6 +74,6 @@ permalink: /vertiefung-tafel-2-meine-kurze-autobiographie/
     </div>
   </div>
   <div class="buttons">
-    <a href="{{ '/trinkewitz/tafel2/' | relative_url }}" class="neutral">zu Tafel 2</a> <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
+    <a href="{{ '/tafelinhalt2/' | relative_url }}" class="neutral">zu Tafel 2</a> <a href="{{ '/leben/' | relative_url }}" class="neutral">Leben-Kunst</a>
   </div>
 </div>
