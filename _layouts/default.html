@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "de-DE" }}">
+    {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    {% if page.banner %}
+      {% assign b = page.banner %}
+      {% include parallax_image.html collection=b.collection pid=b.pid y=b.y height=b.height image=b.image clickable=b.clickable %}
+    {% endif %}
+
+    <div id='wax-main'>
+      <div id='wax-content' class='wax-inline-container'>
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script type='text/javascript' async defer src='{{ "/assets/bootstrap/bootstrap.min.js" | absolute_url }}'></script>
+    <script type='text/javascript' async defer src='{{ "/assets/popper.min.js" | absolute_url }}'></script>
+  </body>
+</html>

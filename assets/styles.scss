@@ -1,0 +1,787 @@
+---
+sitemap: false
+---
+
+/*
+variable declaration
+*/
+
+/* branding */
+$logo: url("{{ 'img/logo-platzhalter.png' | absolute_url }}");
+
+/* typography */
+//$body-font: 'Helvetica', 'Arial', 'Segoe UI', sans-serif;
+//$heading-font: 'Helvetica', 'Arial', 'Segoe UI', sans-serif;
+//$body-font: 'Open Sans', sans-serif;
+//$heading-font: 'Open Sans', sans-serif;
+/*@font-face {
+  font-family: 'Nunito';
+  src: url('/assets/fonts/Nunito-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Nunito-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/open-sans-v40-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/open-sans-v40-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/open-sans-v40-latin-700.woff2') format('woff2');
+}
+
+$body-font: 'Open Sans', 'Nunito', 'Helvetica', 'Arial', sans-serif;
+$heading-font: 'Open Sans', 'Nunito', 'Helvetica', 'Arial', sans-serif;
+
+/* font sizes */
+$base-font-size: 16px;
+$small-font-size: 14px;
+$large-font-size: 20px;
+
+/* colors */
+$heading-color: #000000;
+$text-color: #666666;
+$bg-color: #ffffff;
+$neutral: #eae7de;
+$accent-light: #966d09;
+$accent-dark: #644906;
+
+/* image sizes */
+$thumbnail-height: 140px;
+$thumbnail-width: 140px;
+
+/* viewport sizes */
+$max-width: 1310px;
+
+/* margins */
+$less-margin: 1.0rem;
+$margin: 1.5rem;
+$more-margin: 2.0rem;
+$super-margin: 3.0rem;
+
+/* heights */
+$viewer-height: 550px;
+$parallax-height: 350px;
+$footer-height: 50px;
+
+/*
+font & asset import
+*/
+// If you no longer want to load fonts from Google, you can remove this line
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import 'wax';
+
+/* Custom styles */
+.buttons {
+  margin-top: 20px;
+}
+.buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  margin: 0 10px;
+}
+.buttons a.red {
+  background-color: #B02B2C;
+  border-color: #B02B2C;
+}
+.buttons a.neutral {
+  background-color: #555555;
+  border-color: #555555;
+}
+
+.navbar-brand {
+  font-size: 1rem; /* Adjust the font size variable as needed */
+}
+
+/* Ensure consistency in font sizes */
+body {
+  font-family: $body-font;
+  font-size: $base-font-size;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  color: $heading-color;  // Set the headline color to black
+}
+
+.h2 {
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: $bg-color;
+}
+
+.nav-link {
+  color: $heading-color;
+}
+
+.nav-link:hover {
+  color: $accent-dark;
+}
+
+.dropdown-menu {
+  background-color: $neutral;
+}
+
+.dropdown-item {
+  color: $heading-color;
+}
+
+.dropdown-item:hover {
+  background-color: $accent-light;
+  color: $bg-color;
+}
+
+
+/* Unified Header & Navbar Styles */
+
+#wax-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
+  font-family: $heading-font;
+  color: $heading-color;
+  z-index: 100000;
+  padding: $margin;
+  letter-spacing: 0.05rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0.95; /* Slight opacity for the whole header */
+
+  .wax-inline-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68%; /* Adjusted width */
+    margin: 0 auto;
+  }
+
+  .navbar-brand {
+    font-weight: 400;
+    color: $accent-light;
+    font-size: 1rem;
+    padding: 0; /* Ensure no padding */
+    white-space: normal;
+
+    img.logo-image {
+      max-height: 30px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+
+    &:hover {
+      color: $accent-dark;
+    }
+  }
+
+  .navbar-toggler {
+    background-color: $bg-color;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+
+    .nav-item {
+      z-index: 1000000;
+      margin-left: $less-margin;
+      background-color: $bg-color;
+
+      &.active .nav-link {
+        border-bottom: 2px solid $accent-dark; /* Bottom border for active nav item */
+      }
+    }
+
+    .nav-link {
+      font-size: $base-font-size;
+      color: $heading-color;
+      margin-left: $less-margin;
+
+      &:hover {
+        color: $accent-light;
+        text-decoration: none;
+      }
+
+      &:active {
+        background-color: $bg-color;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: $bg-color;
+      border-color: $neutral;
+
+      .dropdown-item:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+/* Mobile and Smaller Devices */
+@media (max-width: $max-width) {
+  .wax-inline-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-right: $less-margin;
+  }
+
+  /* Uncomment this if you want to hide the logo on small screens */
+  /* .navbar-brand img.logo-image {
+    display: none;
+  } */
+}
+
+/* Very Small Screens or Limited Space */
+@media (max-width: 600px) {
+  .wax-inline-container {
+    width: 100%;
+  }
+
+  /*
+  .navbar-brand {
+    display: none;  Hide the brand logo on very small screens
+  }
+  */
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
+
+/* Main content container */
+#wax-main {
+  width: 100%; /* Use full screen width */
+}
+
+#wax-content {
+  max-width: 1310px; /* Maximum width of the content */
+  width: 100%; /* Use a larger percentage of the screen width */
+  margin: 0 auto; /* Center the container */
+  padding: $more-margin; /* Add some padding */
+}
+
+@media (max-width: $max-width) {
+  #wax-content {
+    width: 95%; /* Adjust width for smaller screens */
+    padding: $less-margin; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Combined Footer Styles */
+#wax-footer {
+  width: 100%;
+  padding-top: 3rem; /* Adjusted padding */
+  padding-bottom: 5rem; /* Retained from original */
+  background-color: #333; /* Using the dark background */
+  border-top: 2px solid $accent-dark;
+  font-size: 11px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjusted from original align-items: center */
+
+  .col {
+    flex-basis: 0;
+    flex-shrink: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 250px;
+  }
+
+  .footer-title, .footer-description, .footer-links, .footer-copyright {
+    font-family: $heading-font;
+    margin: 0;
+    font-size: .9em;
+    line-height: 1.2;
+  }
+
+  .footer-title {
+    font-weight: bold;
+    padding-bottom: 1em;
+  }
+
+  .footer-copyright {
+    text-align: left;
+    padding-top: 6px; /* Added padding */
+  }
+
+  .footer-links {
+    text-align: right;
+  }
+
+  .footer-logos {
+    margin: $margin 0;
+    a {
+      text-decoration: none;
+    }
+    img {
+      height: 35px;
+    }
+  }
+
+  .sub_menu_socket {
+    display: flex;
+    justify-content: flex-end;
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      .menu-item {
+        margin: 0 $less-margin;
+        
+        .menu-text {
+          font-size: 11px;
+          color: white;
+          text-decoration: none;
+          text-align: right;
+        }
+
+        .menu-fx {
+          display: none; /* Keep this or modify based on your design needs */
+        }
+
+        &:hover .menu-text {
+          color: $accent-light;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-width) {
+  #wax-footer {
+    .wax-inline-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .sub_menu_socket .menu {
+      flex-direction: column;
+      align-items: center;
+      .menu-item {
+        margin: $less-margin 0;
+      }
+    }
+  }
+}
+
+/* Wax gallery container adjustments */
+.wax-gallery-container {
+  .wax-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: $margin auto; /* Ensures consistent margin around the gallery */
+
+    .gallery-item {
+      flex: 0 1 19%; /* Adjusted to 20% to fit 5 items per line */
+      padding: 0.5rem; /* Padding around each item for spacing */
+      margin: 0.25rem; /* Space between items, adjust if more space is needed */
+      background-color: #ffffff;
+      border: 1px grey solid;
+      margin-bottom: 2rem; /* Added to prevent overlap of titles on smaller screens */
+      position: relative; /* Required for overlay positioning */
+
+      .gallery-thumb {
+        object-fit: cover;
+        width: 100%;
+        height: auto; /* Adjusted to ensure images scale correctly */
+      }
+
+      .gallery-title {
+        text-align: center;
+        font-size: 0.9rem; /* Make sure the font size fits smaller screens */
+        color: $heading-color; /* Consistency with the theme */
+        padding-top: 0.5rem; /* Space between the image and the title */
+        display: block; /* Ensures title is always visible */
+      }
+
+      .hovereffect {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        cursor: default;
+
+        .overlay {
+          transition: opacity 0.5s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          width: 100%;
+          height: 100%; /* Ensures overlay covers the image completely */
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .info {
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+          }
+        }
+
+        &:hover .overlay {
+          opacity: 0.8;
+          .info {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wax-gallery-container .wax-gallery .gallery-item {
+    flex: 0 1 20%; /* Adjust this to maintain 5 items per line */
+  }
+}
+
+@media (max-width: 768px) {
+  .wax-gallery-container .wax-gallery .gallery-item {
+    flex: 0 1 33.33%; /* This remains the same for 3 items per line */
+  }
+}
+
+@media (max-width: 480px) {
+  .wax-gallery-container .wax-gallery .gallery-item {
+    flex: 0 1 50%; /* This remains the same for 2 items per line */
+  }
+}
+
+
+/* Facet button styling */
+.facet-buttons {
+  margin-bottom: 1rem;
+  text-align: center;
+
+  .btn.facet {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: $bg-color;
+    color: $accent-light;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover, &.active {
+      background-color: $accent-dark;
+    }
+  }
+}
+
+
+/* Ensure styles for avia-related classes */
+.avia-section {
+  padding: $more-margin 0;
+  background-color: $bg-color;
+}
+
+.avia-image-container {
+  position: relative;
+  text-align: center;
+  margin: $more-margin 0;
+}
+
+.avia-image-container-inner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.avia_image {
+  max-width: 100%;
+  height: auto;
+}
+
+.av-image-caption-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: $bg-color;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  p {
+    margin: 0; // Ensures no extra margin around the paragraph.
+    padding: 1rem; // Adds some padding for better readability.
+    font-size: $base-font-size; // Adjust the font size if needed.
+    text-align: center; // Centers the text within the overlay.
+    color: $bg-color; // Specific color for the text within the paragraph
+  }
+}
+
+.avia-image-container:hover .av-image-caption-overlay {
+  opacity: 1;
+}
+
+/* Special heading styles */
+.blockquote.modern-quote {
+  margin: $more-margin 0;
+  padding: $less-margin 0;
+  font-family: $heading-font;
+  /*border-left: 1px solid $accent-light;*/
+  background-color: $bg-color;
+}
+
+.blockquote h2, .blockquote h3 {
+  margin: $less-margin 0;
+  padding: $less-margin 0;
+  font-family: $heading-font;
+  color: $heading-color;
+}
+
+.special-heading-border .special-heading-inner-border {
+  width: 50%;
+  height: 2px;
+  background-color: $accent-dark;
+  margin: $less-margin 0;
+}
+
+/* Adjustments for mobile and smaller devices */
+@media (max-width: $max-width) {
+  .avia-image-container {
+    margin: $less-margin 0;
+  }
+
+  .blockquote.modern-quote {
+    padding: $less-margin 0;
+  }
+
+  .special-heading-border .special-heading-inner-border {
+    width: 70%;
+  }
+}
+
+/* Add this CSS to ensure the flexbox layout works properly */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.flex_column img {
+  width: 100%; /* Ensures images fit within their columns */
+  height: auto;
+}
+
+/* Add the container_wrap class */
+.container_wrap {
+  max-width: 1310px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container */
+  /*padding: 0 15px;*/ /* Add some padding for content inside the container */
+}
+
+.fullsize {
+  width: 100%; /* Ensure full width for fullsize class */
+}
+.flex-column {
+  box-sizing: border-box;
+  padding: 0 10px; /* Adjust padding as needed */
+}
+
+.one-whole {
+  flex: 0 0 100%;
+}
+
+.one-half {
+  flex: 0 0 48%;
+}
+
+.one-third {
+  flex: 0 0 31.33%;
+}
+
+.one-fourth {
+  flex: 0 0 23%;
+}
+
+.two-thirds {
+  flex: 0 0 65%;
+}
+
+.three-fourths {
+  flex: 0 0 74%;
+}
+
+
+/* startpage styling */
+
+.startpage-flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.startpage-image-column {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 20px;
+  padding-left: 10px;
+
+  @media (max-width: 768px) {
+    flex: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.startpage-image-wrapper {
+  position: relative;
+  text-align: left;
+}
+
+.startpage-image-link {
+  display: inline-block;
+}
+
+.startpage-image {
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.startpage-caption-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.startpage-text-column {
+  flex: 2;
+  max-width: 70%;
+  padding-left: 40px;
+
+  @media (max-width: 768px) {
+    flex: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+
+.startpage-paragraph {
+  margin-bottom: 60px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.startpage-paragraph.last-paragraph {
+  margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.inhalt_hovereffect {
+  position: relative; /* Ensure the parent container is relative */
+  overflow: hidden; /* Optional: hides any overflow */
+
+  img {
+    display: block;
+    width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+  }
+
+  .inhalt_overlay {
+    position: absolute; /* Position overlay relative to inhalt_hovereffect */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire parent container */
+    height: 100%; /* Cover the entire parent container */
+    background-color: rgba(0, 0, 0, 0.4); /* Background color with transparency */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure it's above the image */
+
+    .inhalt_info {
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      color: white; /* Adjust text color as needed */
+      font-size: 0.9rem;
+    }
+  }
+
+  &:hover .inhalt_overlay {
+    opacity: 0.8; /* Adjust opacity on hover */
+    
+    .inhalt_info {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+

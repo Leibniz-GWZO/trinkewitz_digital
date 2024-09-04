@@ -1,0 +1,176 @@
+---
+layout: none
+---
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/collection/trinkewitz.json",
+  "@type": "sc:Collection",
+  "label": "trinkewitz",
+  "manifests": [
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel10_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel10_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel10_2/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel10_2"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel10_3/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel10_3"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel10_4/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel10_4"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel11/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel11"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel12/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel12"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel13/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel13"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel2/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel2"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel3_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel3_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel3_2/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel3_2"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel3_3_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel3_3_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel3_4_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel3_4_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel4_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel4_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel4_2_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel4_2_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel4_3_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel4_3_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel5_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel5_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel5_2_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel5_2_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel5_3_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel5_3_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel5_4_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel5_4_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel5_5_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel5_5_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel5_6_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel5_6_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel6_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel6_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel6_2_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel6_2_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel6_3_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel6_3_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel7_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel7_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel7_2_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel7_2_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel7_3_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel7_3_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel8_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel8_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel8_2_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel8_2_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel9_1_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel9_1_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel9_2_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel9_2_1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/tafel9_3_1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "tafel9_3_1"
+    }
+  ]
+}

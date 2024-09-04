@@ -1,0 +1,105 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "de-DE" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinkewitz Ausstellung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .background-image {
+            background-image: url('img/Karel_TrinkewitzUmschlag2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .background-image h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            margin: 0 10px;
+        }
+        .buttons a.red {
+            background-color: #B02B2C;
+            border-color: #B02B2C;
+        }
+        .partners {
+            padding: 40px 0;
+            background-color: white;
+        }
+        .partners h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+        .logos a img {
+            max-height: 100px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>„Die unerträgliche Leichtigkeit des Haiku“ – Der Künstler Karel Trinkewitz</h1>
+    </div>
+    <div class="background-image">
+        <h2>WILLKOMMEN!<br>ZUR ONLINE-AUSSTELLUNG</h2>
+        <div class="buttons">
+            <a href="{{ '/start' | relative_url }}" class="red">ENTRÉE</a>
+            <a href="{{ '/leben' | relative_url }}">ÜBER DEN KÜNSTLER</a>
+        </div>
+    </div>
+    <div class="partners">
+        <h3>Förderer und Kooperationspartner</h3>
+        <div class="logos">
+            <a href="https://leibniz-gwzo.de/de" target="_blank"><img src="img/gwzo_de_A_r_3_rgb-2-300x103.jpg" alt="GWZO"></a>
+            <a href="https://www.bmbf.de/" target="_blank"><img src="img/BMBF_CMYK_Gef_de.jpg" alt="Bundesministerium für Bildung und Forschung"></a>
+            <a href="https://www.hu-berlin.de/de/" target="_blank"><img src="img/Logo_HU_bw.jpg" alt="Humboldt-Universität zu Berlin"></a>
+            <a href="http://www.uni-potsdam.de/" target="_blank"><img src="img/01_UPjpg-1.jpg" alt="Universität Potsdam"></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO). [Online-Ausstellung Trinkewitz, Januar 2017]</p>
+    </div>
+</body>
+</html>

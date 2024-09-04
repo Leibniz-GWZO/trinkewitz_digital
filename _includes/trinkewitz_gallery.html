@@ -1,0 +1,57 @@
+{% assign collection = site[include.collection] %}
+{% assign id = include.id | default: include | jsonify | slugify %}
+
+{% assign filtered_collection = collection | where: "overview_page", "yes" %}
+{% assign sorted_collection = filtered_collection | sort: "overviewPage_title" %}
+
+{% assign sorted_collection = sorted_collection | sort: "overviewPage_title" %}
+
+{% assign sorted_collection = sorted_collection | sort_numerically: "overviewPage_title" %}
+
+
+<div id='{{ id }}-container' class='wax-gallery-container full-width'>
+  <!-- <div class='wax-inline-container'> -->
+    <div id="wax-gallery-{{ id }}" class="wax-gallery"></div>
+  <!-- </div> -->
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    let gallery = $('#wax-gallery-{{ id }}');
+    let items = [];
+    let counter = 1;
+
+    {% for item in sorted_collection %}
+      {%- capture item_html -%}
+        "<div class='gallery-item {{ item[include.facet_by] | slugify }} all'>
+          <a href='{{ '/tafelinhalt' | append: counter | relative_url }}'>
+            <div class='hovereffect'>
+              <img class='img-responsive gallery-thumb' src='{{ item.thumbnail | default: site.default_thumb | absolute_url }}' alt='{{ item.overviewPage_title | escape }}'/>
+              <div class='overlay'>
+                <p class='info'>{{ item.overviewPage_title | escape }}</p>
+              </div>
+            </div>
+          </a>
+          <div class='gallery-title'>{{ item.overviewPage_title | escape }}</div>
+        </div>"
+      {%- endcapture -%}
+      items.push({{ item_html | strip_newlines }});
+    {% endfor %}
+
+    // Sort the items array by a custom sorting function (e.g., by numerical prefix)
+    items.sort(function(a, b) {
+        // Extract the numerical prefix from titles (adjust the regex as needed)
+        let numA = parseInt($(a).find('.gallery-title').text().match(/^\d+/)[0], 10);
+        let numB = parseInt($(b).find('.gallery-title').text().match(/^\d+/)[0], 10);
+        return numA - numB;
+    });
+
+    // Append sorted items to the gallery with incremental links
+    items.forEach(function(item) {
+        let updatedItem = item.replace('{{ '/tafelinhalt' | append: counter | relative_url }}', 
+                                       '{{ '/tafelinhalt' | relative_url }}' + counter + '/');
+        gallery.append(updatedItem);
+        counter++;
+    });
+  });
+</script>
