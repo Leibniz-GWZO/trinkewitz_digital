@@ -62,3 +62,8 @@ permalink: /tafelinhalt9/
 </div>
 
 <hr style="border-top: 2px solid #000; margin-top: 60px; margin-bottom: 80px;">
+
+<div class="buttons" style="display: flex; justify-content: space-between;">
+  <a href="{{ '/tafelinhalt8/' | relative_url }}" class="neutral">zu Tafel 8</a>
+  <a href="{{ '/tafelinhalt10/' | relative_url }}" class="neutral">zu Tafel 10</a>
+</div>
