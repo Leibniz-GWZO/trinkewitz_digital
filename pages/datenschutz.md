@@ -33,6 +33,11 @@ Bei der bloß informatorischen Nutzung unserer Website, also wenn Sie sich nicht
 
 Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website. Eine Weitergabe oder anderweitige Verwendung der Daten findet nicht statt. Wir behalten uns allerdings vor, die Server-Logfiles nachträglich zu überprüfen, sollten konkrete Anhaltspunkte auf eine rechtswidrige Nutzung hinweisen.
 
+
+**Nutzung von Plausible Analytics**
+
+Diese Website verwendet Plausible Analytics, einen datenschutzfreundlichen Webanalysedienst, der keine Cookies verwendet und keine personenbezogenen Daten speichert. Plausible erfasst anonymisierte Daten über die Nutzung dieser Website, wie z. B. Seitenaufrufe, Referrer, verwendete Browser und Geräte, sowie die geografische Herkunft auf Länderebene. Diese Daten werden ausschließlich zum Zweck der Analyse und Optimierung dieser Website verwendet. Die Verarbeitung erfolgt im Einklang mit den datenschutzrechtlichen Bestimmungen der DSGVO. Es werden keine personenbezogenen Daten an Dritte weitergegeben oder für Marketingzwecke verwendet.
+
 ---
 
 ## 3) Cookies
