@@ -36,7 +36,7 @@ Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres be
 
 **Nutzung von Plausible Analytics**
 
-Diese Website verwendet Plausible Analytics, einen datenschutzfreundlichen Webanalysedienst, der keine Cookies verwendet und keine personenbezogenen Daten speichert. Plausible erfasst anonymisierte Daten über die Nutzung dieser Website, wie z. B. Seitenaufrufe, Referrer, verwendete Browser und Geräte, sowie die geografische Herkunft auf Länderebene. Diese Daten werden ausschließlich zum Zweck der Analyse und Optimierung dieser Website verwendet. Die Verarbeitung erfolgt im Einklang mit den datenschutzrechtlichen Bestimmungen der DSGVO. Es werden keine personenbezogenen Daten an Dritte weitergegeben oder für Marketingzwecke verwendet.
+Diese Website verwendet Plausible Analytics, einen datenschutzfreundlichen Webanalysedienst, der keine Cookies verwendet und keine personenbezogenen Daten speichert. Plausible erfasst anonymisierte Daten über die Nutzung dieser Website, wie z. B. Seitenaufrufe, Referrer, verwendete Browser und Geräte, sowie die geografische Herkunft auf Länderebene. Diese Daten werden ausschließlich zum Zweck der Analyse und Optimierung dieser Website verwendet. Die Verarbeitung erfolgt im Einklang mit den datenschutzrechtlichen Bestimmungen der DSGVO. Es werden keine personenbezogenen Daten an Dritte weitergegeben oder für Marketingzwecke verwendet. Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Plausible Analytics: plausible.io/privacy und plausible.io/data-policy.
 
 ---
 
